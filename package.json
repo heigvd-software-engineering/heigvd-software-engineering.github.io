@@ -6,6 +6,6 @@
   },
   "scripts": {
     "stylelint": "stylelint '_sass/**/*.scss'",
-    "start": "bundle exec jekyll serve"
+    "start": "bundle exec jekyll serve --livereload"
   }
 }

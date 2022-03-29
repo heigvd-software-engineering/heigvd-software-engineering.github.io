@@ -251,12 +251,14 @@ body {
 #sidebar a:hover,
 #sidebar a:focus,
 #sidebar a.active {
-  svg { fill: $sidebar-icon-color; }
+  svg { fill: $red; }
 }
 
 #sidebar a:hover,
-#sidebar a:focus {
+#sidebar a:focus,
+#sidebar .site-title:hover {
   text-decoration: underline;
+  color: $red;
 
   &.icon {
     text-decoration: none;

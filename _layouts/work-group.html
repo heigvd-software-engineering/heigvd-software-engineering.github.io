@@ -7,7 +7,28 @@ layout: default
   <h1 class="page-title">{{ page.title }}</h1>
 </header>
 <div>{{ content }}</div>
-<div>
-    <img class="profile" src="https://i.ibb.co/PcXdB47/cat.jpg" alt="cat">
+
+<div class="team">
+    <div class="profile">
+        <div class="picture-icons">
+            <img class="profile-picture" src="https://i.ibb.co/PcXdB47/cat.jpg" alt="cat">
+            <div class="social-icons">
+                <div>
+                    <i class="fa-solid fa-envelope social-icon"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github social-icon"></i>
+                </div>
+            </div>
+        </div>
+        <span class="profile-infos">
+            <span class="name">Mr Cat Meow First</span>
+            <span class="occupation">Scratcher</span>
+            <span class="description">Mr Cat Meow First is considered as one of the best in his field, the practice of couch scratching. Practicing it since his early childhood, he was able to acquire years of experience, multiplied by his seven lives as a cat.
+
+            His biggest hobby is sleeping, like most of his compatriots. If you had a bad day, he will always be there to bring you love.</span>
+        </span>
+    </div>
 </div>
-{% include back-link.html %}
+
+    {% include back-link.html %}

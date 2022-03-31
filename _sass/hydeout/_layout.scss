@@ -110,7 +110,7 @@ body {
 
   // Bigger title
   .site-title {
-    font-size: 3.25rem;
+    font-size: 2.5rem;
   }
 
   // Show secondary nav content + lead
@@ -181,7 +181,7 @@ body {
     }
 
     .site-title {
-      font-size: 3.25rem;
+      font-size: 2.5rem;
       .back-arrow { display: none; }
     }
 
@@ -251,12 +251,14 @@ body {
 #sidebar a:hover,
 #sidebar a:focus,
 #sidebar a.active {
-  svg { fill: $sidebar-icon-color; }
+  svg { fill: $red; }
 }
 
 #sidebar a:hover,
-#sidebar a:focus {
+#sidebar a:focus,
+#sidebar .site-title:hover {
   text-decoration: underline;
+  color: $red;
 
   &.icon {
     text-decoration: none;

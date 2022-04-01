@@ -1,56 +1,113 @@
-.team {
-    display: grid;
-}
+/* Computers (and landscape on some tablets) */
 
-.profile {
+@media (min-width: 1080px) {
+  .team {
+    display: grid;
+  }
+
+  .profile {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 32px;
+  }
+
+  .picture-icons {
+    flex-direction: column;
+  }
+
+  .profile-infos {
+    margin-left: 2.5rem;
+  }
+
+  .social-icons {
+    padding-top: 1.5rem;
+  }
+
+  .social-icon {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  }
+}
+
+/* Mobile and tablets */
+
+@media (max-width: 1079px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .picture-icons {
+    flex-direction: row;
+  }
+
+  .profile-infos {
+    margin-top: 1rem;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    margin-left: 1.5rem;
+  }
+
+  .social-icon {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  }
+}
+
+/* General */
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  max-width: 30rem;
 }
 
 .picture-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .profile-picture {
-    width: 60rem;
-    border-radius: 50%;
-    margin-bottom: 0;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 0;
 }
 
 .profile-infos {
-    margin-left: 48px;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .name {
-    color: black;
-    font-size: 32px;
+  color: black;
+  font-size: 32px;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    padding-top: 24px;
-    padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .social-icon {
-    color: black;
-    font-size: 30px;
-    cursor: pointer;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .social-icon:hover {
-    color: $red;
+  color: $red;
 }
 
 .description {
-    text-align: justify;
-    padding-top: 32px;
+  font-size: 18px;
+  text-align: justify;
+  padding-top: 1.5rem;
 }

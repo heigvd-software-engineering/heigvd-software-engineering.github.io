@@ -12,30 +12,30 @@
 
   .cat-meow {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     grid-area: 1 / 1 / 2 / 2;
   }
 
   .scott {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     grid-area: 1 / 2 / 2 / 3;
   }
 
   .scott-2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     grid-area: 2 / 1 / 3 / 2;
   }
 
   .scott-3 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     grid-area: 2 / 2 / 3 / 3;
   }
 
   .picture-icons {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .profile-infos {
@@ -47,8 +47,7 @@
   }
 
   .social-icon {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
   }
 }
 
@@ -64,6 +63,7 @@
   .scott, .scott-2, .scott-3 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
   }
 
   .picture-icons {
@@ -121,7 +121,7 @@
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   width: 100%;
 }
 

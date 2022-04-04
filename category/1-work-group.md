@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Work Group
+title: Members
 ---
 
 Team members informations.

@@ -25,7 +25,7 @@
 body {
   background-attachment: fixed;
   background-color: $sidebar-bg-color;
-  background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 7%), darken($sidebar-bg-color, 7%));
+  // background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 7%), darken($sidebar-bg-color, 7%));
   color: $sidebar-text-color;
   display: flex;
   flex-direction: column;
@@ -36,8 +36,12 @@ body {
   flex: 0 0 auto;
   padding: $section-spacing;
 
+  .logo {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+
   .site-title {
-    font-family: 'Abril Fatface', serif;
     font-size: $large-font-size;
     font-weight: normal;
     margin-bottom: $heading-spacing;
@@ -106,7 +110,7 @@ body {
 .home #sidebar {
 
   // Center sidebar content
-  text-align: center;
+  // text-align: center;
 
   // Bigger title
   .site-title {
@@ -255,8 +259,7 @@ body {
 }
 
 #sidebar a:hover,
-#sidebar a:focus,
-#sidebar .site-title:hover {
+#sidebar a:focus {
   text-decoration: underline;
   color: $red;
 

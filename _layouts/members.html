@@ -6,180 +6,42 @@ layout: default
   {% include back-link.html %}
   <h1 class="page-title">{{ page.title }}</h1>
 </header>
-<div>{{ content }}</div>
 
 <div class="team content">
-  <div class="cat-meow">
-    <div class="picture-icons">
+  {% for profile in site.profiles %}
+  <div class="profile">
+    <div class="img-name-occupation-icons">
       <img
-        class="profile-picture"
-        src="https://i.ibb.co/PcXdB47/cat.jpg"
-        alt="cat"
+        class="profile-img"
+        src={{ profile.img }}
+        alt={{ profile.name }}
       />
-      <div class="profile-infos">
-        <span class="name">Ludovic Delafontaine</span>
-        <span class="occupation">Collaborateur Ra&D HES</span>
+      <div class="name-occupation-icons">
+        <span class="name">{{ profile.name }}</span>
+        <span class="occupation">{{ profile.occupation }}</span>
         <div class="social-icons">
           <div>
-            <i class="fa-solid fa-envelope social-icon"></i>
+            <a href="mailto:{{ profile.mail }}"><i class="fa-solid fa-envelope social-icon"></i></a>
           </div>
           <div>
-            <i class="fa-brands fa-github social-icon"></i>
+            <a href={{ profile.github }} target="_blank"><i class="fa-brands fa-github social-icon"></i></a>
           </div>
+          {% if profile.linkedin %}
           <div>
-            <i class="fa-brands fa-linkedin social-icon"></i>
+            <a href={{ profile.linkedin }} target="_blank"><i class="fa-brands fa-linkedin social-icon"></i></a>
           </div>
+          {% endif %}
+          {% if profile.site_web %}
+          <div>
+            <a href={{ profile.site_web }} target="_blank"><i class="fa-solid fa-link social-icon"></i></a>
+          </div>
+          {% endif %}
         </div>
       </div>
     </div>
-    <span class="description"
-      >Ludovic Delafontaine is considered as one of the best in his field, the
-      practice of couch scratching. Practicing it since his early childhood, he
-      was able to acquire years of experience, multiplied by his seven lives as
-      a cat. His biggest hobby is sleeping, like most of his compatriots. If you
-      had a bad day, he will always be there to bring you love.</span
-    >
+    <span class="description">{{ profile.description }}</span>
   </div>
-  <div class="scott">
-    <div class="picture-icons">
-      <img
-        class="profile-picture"
-        src="https://i.ibb.co/QcprQ1W/243170-1200x773-scottish-fold-cat-copie.jpg"
-        alt="scottish-fold"
-      />
-      <div class="profile-infos">
-        <span class="name">Dr Scott Ishfold</span>
-        <span class="occupation">Cuddler</span>
-        <div class="social-icons">
-          <div>
-            <i class="fa-solid fa-envelope social-icon"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-github social-icon"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <span class="description"
-      >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem mauris,
-      suscipit eget dictum sit amet, rhoncus nec ex. Vestibulum porta volutpat
-      metus, sit amet mollis mi. Aliquam hendrerit dui tellus, rutrum
-      ullamcorper massa lacinia at. Vestibulum consectetur sed purus non
-      accumsan.</span
-    >
-  </div>
-  <div class="scott-2">
-    <div class="picture-icons">
-      <img
-        class="profile-picture"
-        src="https://i.ibb.co/QcprQ1W/243170-1200x773-scottish-fold-cat-copie.jpg"
-        alt="scottish-fold"
-      />
-      <div class="profile-infos">
-        <span class="name">Dr Scott Ishfold</span>
-        <span class="occupation">Cuddler</span>
-        <div class="social-icons">
-          <div>
-            <i class="fa-solid fa-envelope social-icon"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-github social-icon"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <span class="description"
-      >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem mauris,
-      suscipit eget dictum sit amet, rhoncus nec ex. Vestibulum porta volutpat
-      metus, sit amet mollis mi. Aliquam hendrerit dui tellus, rutrum
-      ullamcorper massa lacinia at. Vestibulum consectetur sed purus non
-      accumsan.</span
-    >
-  </div>
-  <div class="scott-3">
-    <div class="picture-icons">
-      <img
-        class="profile-picture"
-        src="https://i.ibb.co/QcprQ1W/243170-1200x773-scottish-fold-cat-copie.jpg"
-        alt="scottish-fold"
-      />
-      <div class="profile-infos">
-        <span class="name">Dr Scott Ishfold</span>
-        <span class="occupation">Cuddler</span>
-        <div class="social-icons">
-          <div>
-            <i class="fa-solid fa-envelope social-icon"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-github social-icon"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <span class="description"
-      >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem mauris,
-      suscipit eget dictum sit amet, rhoncus nec ex. Vestibulum porta volutpat
-      metus, sit amet mollis mi. Aliquam hendrerit dui tellus, rutrum
-      ullamcorper massa lacinia at. Vestibulum consectetur sed purus non
-      accumsan.</span
-    >
-  </div>
-  <div class="scott-4">
-    <div class="picture-icons">
-      <img
-        class="profile-picture"
-        src="https://i.ibb.co/QcprQ1W/243170-1200x773-scottish-fold-cat-copie.jpg"
-        alt="scottish-fold"
-      />
-      <div class="profile-infos">
-        <span class="name">Dr Scott Ishfold</span>
-        <span class="occupation">Cuddler</span>
-        <div class="social-icons">
-          <div>
-            <i class="fa-solid fa-envelope social-icon"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-github social-icon"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <span class="description"
-      >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem mauris,
-      suscipit eget dictum sit amet, rhoncus nec ex. Vestibulum porta volutpat
-      metus, sit amet mollis mi. Aliquam hendrerit dui tellus, rutrum
-      ullamcorper massa lacinia at. Vestibulum consectetur sed purus non
-      accumsan.</span
-    >
-  </div>
-  <div class="scott-5">
-    <div class="picture-icons">
-      <img
-        class="profile-picture"
-        src="https://i.ibb.co/QcprQ1W/243170-1200x773-scottish-fold-cat-copie.jpg"
-        alt="scottish-fold"
-      />
-      <div class="profile-infos">
-        <span class="name">Dr Scott Ishfold</span>
-        <span class="occupation">Cuddler</span>
-        <div class="social-icons">
-          <div>
-            <i class="fa-solid fa-envelope social-icon"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-github social-icon"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <span class="description"
-      >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem mauris,
-      suscipit eget dictum sit amet, rhoncus nec ex. Vestibulum porta volutpat
-      metus, sit amet mollis mi. Aliquam hendrerit dui tellus, rutrum
-      ullamcorper massa lacinia at. Vestibulum consectetur sed purus non
-      accumsan.</span
-    >
-  </div>
+  {% endfor %}
 </div>
 
 {% include back-link.html %}

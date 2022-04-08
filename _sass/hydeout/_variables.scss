@@ -42,9 +42,9 @@ $code-font-family: Menlo, Monaco, 'Courier New', monospace !default;
 $code-color: #bf616a !default;
 
 // Hyde theming
-$sidebar-bg-color: #202020 !default;
-$sidebar-fg-color: #fff !default;
-$sidebar-sticky: true !default;
+$sidebar-bg-color: #fff !default;
+$sidebar-fg-color: #000 !default;
+$sidebar-sticky: false !default;
 $layout-reverse: false !default;
 
 $sidebar-title-color: $sidebar-fg-color !default;

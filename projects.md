@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects
+order: 2
 sidebar_link: true
 ---
 

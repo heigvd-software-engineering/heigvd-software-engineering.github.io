@@ -5,5 +5,5 @@ occupation: Collaborateur Ra&D HES
 description:
 github: https://github.com/Drabble
 mail: antoine.drabble@heig-vd.ch
-linkedin:
+linkedin: https://www.linkedin.com/in/antoine-drabble/
 ---

@@ -5,5 +5,5 @@ occupation: Assistant HES académique
 description:
 github: https://github.com/Ezehkiel
 mail: remi.poulard@heig-vd.ch
-linkedin:
+linkedin: https://www.linkedin.com/in/r%C3%A9mi-poulard-a62724167/
 ---

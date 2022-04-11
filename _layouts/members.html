@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<header>
+  {% include back-link.html %}
+  <h1 class="page-title">{{ page.title }}</h1>
+</header>
+
+<div class="team content">
+  {% for profile in site.profiles %}
+  <div class="profile">
+    <div class="img-name-occupation-icons">
+      <img
+        class="profile-img"
+        src={{ profile.img }}
+        alt={{ profile.name }}
+      />
+      <div class="name-occupation-icons">
+        <span class="name">{{ profile.name }}</span>
+        <span class="occupation">{{ profile.occupation }}</span>
+        <div class="social-icons">
+          <div>
+            <a href="mailto:{{ profile.mail }}"><i class="fa-solid fa-envelope social-icon"></i></a>
+          </div>
+          {% if profile.github %}
+          <div>
+            <a href={{ profile.github }} target="_blank"><i class="fa-brands fa-github social-icon"></i></a>
+          </div>
+          {% endif %}
+          {% if profile.gitlab %}
+          <div>
+            <a href={{ profile.gitlab }} target="_blank"><i class="fa-brands fa-gitlab social-icon"></i></i></a>
+          </div>
+          {% endif %}
+          {% if profile.linkedin %}
+          <div>
+            <a href={{ profile.linkedin }} target="_blank"><i class="fa-brands fa-linkedin social-icon"></i></a>
+          </div>
+          {% endif %}
+          {% if profile.site_web %}
+          <div>
+            <a href={{ profile.site_web }} target="_blank"><i class="fa-solid fa-link social-icon"></i></a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <span class="description">{{ profile.description }}</span>
+  </div>
+  {% endfor %}
+</div>
+
+{% include back-link.html %}

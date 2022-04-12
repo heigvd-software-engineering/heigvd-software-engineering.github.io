@@ -3,24 +3,24 @@ layout: default
 ---
 
 <div class="content">
-
   {{ content }}
 
   {% for post in paginator.posts %}
-      <div class="post">
-        <article class="article">
+    <div class="post">
+      <article class="article">
+        <h2 class="post-title">{{ post.title }}</h2>
 
-            <h2 class="post-title">
-              {{ post.title }}
-            </h2>
-
+        <div class="excerpt">
           {{ post.excerpt }}
-
           <a href="{{ post.url | relative_url }}">More &hellip;</a>
+        </div>
 
+        <div class="author-date">
+          <div class="author">{{ post.author }}</div>
           {% include post-date.html post=post %}
-        </article>
-      </div>
+        </div>
+      </article>
+    </div>
   {% endfor %}
 
   {% include pagination-older.html %}

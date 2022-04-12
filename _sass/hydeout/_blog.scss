@@ -1,17 +1,31 @@
 .post {
-    border: 2px solid black;
-    border-radius: 1rem;
-    margin-bottom: 4rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
 }
 
 .article {
-    padding: 1rem;
+  padding: 1.5rem;
 }
 
-.post-meta {
-    color: $body-muted;
+.post-title {
+  margin-bottom: 0;
+  padding-bottom: 1.5rem;
 }
 
+.excerpt {
+  text-align: justify;
+}
+
+.author-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.author,
 .post-date {
-    padding-top: 1rem;
+  color: $body-muted;
 }

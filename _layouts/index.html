@@ -19,7 +19,14 @@ layout: default
           <div class="author">{{ post.author }}</div>
           {% include post-date.html post=post %}
         </div>
+
       </article>
+
+        {% if post.tags.size != 0 %}
+          {% include post-tags.html post=post %}
+        {% else post.tags.size == 0 %}
+          <div class="space"></div>
+        {% endif %}
     </div>
   {% endfor %}
 

@@ -39,7 +39,6 @@ tags:
   - standard
   - Success
   - Swagger
-  - Tags
   - template
   - title
   - twitter

@@ -1,11 +1,11 @@
 .post {
-  border: 2px solid black;
+  border: 0.1rem solid black;
   border-radius: 1rem;
   margin-bottom: 4rem;
 }
 
 .article {
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1rem;
 }
 
 .post-title {
@@ -28,4 +28,29 @@
 .author,
 .post-date {
   color: $body-muted;
+}
+
+.post-categories,
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  margin: 0 0.5rem 1rem 0.5rem;
+  border-top: 0.1rem solid black;
+}
+
+.categories,
+.tags {
+  padding: 0 0.5rem 0;
+  margin: 1rem 0 0 1rem;
+  border-radius: 1rem;
+  font-size: 12px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #498EDC;
+  background-color: #bfdbfe;
+}
+
+.space {
+    padding-bottom: 0.5rem;
 }

@@ -177,7 +177,7 @@ Drafts are posts without a date in the filename. They’re posts you’re still 
 ...
 ```
 
-To preview your site with drafts, run jekyll serve or jekyll build with the --drafts switch. Each will be assigned the value modification time of the draft file for its date, and thus you will see currently edited drafts as the latest posts.
+To preview your site with drafts, run ```bundle exec jekyll serve --livereload --drafts``` or simply ```npm run drafts```. Each will be assigned the value modification time of the draft file for its date, and thus you will see currently edited drafts as the latest posts.
 
 When the post is ready to be published, add the date at the beginning of the file name:
 

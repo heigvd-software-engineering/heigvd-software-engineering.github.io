@@ -8,7 +8,6 @@
 
 .pagination {
   color: $gray-3;
-  margin-bottom: $section-spacing;
   text-align: center;
 
   > a {
@@ -28,9 +27,8 @@
   }
 }
 
-// Bottom -> margin-top;
-* + .pagination {
-  margin-top: $section-spacing;
+.pagination-newer {
+  padding: 2rem 0 4rem;
 }
 
 // Push above header if newer on mobile
@@ -58,11 +56,6 @@
 
   .content .pagination:first-child {
     margin-top: 0;
-
-    + * {
-      margin-top: $section-spacing;
-      padding-top: $section-spacing;
-    }
   }
 
   .index #sidebar {

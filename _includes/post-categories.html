@@ -1,6 +1,6 @@
 <div class="post-categories">
   {% for category in include.post.categories %}
-    <div class="categories">
+    <div class="categories {{ category }}">
 
       {% comment %}
         Check if this category has a corresponding page before decide

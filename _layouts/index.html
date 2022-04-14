@@ -3,7 +3,8 @@ layout: default
 ---
 
 <div class="content">
-  {{ content }} {% for post in paginator.posts %}
+  {{ content }} {% include pagination-newer.html %} {% for post in
+  paginator.posts %}
   <div class="hover">
     <div
       class="post-home"

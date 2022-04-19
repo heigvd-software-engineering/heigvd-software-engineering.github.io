@@ -1,14 +1,10 @@
-.post-home {
-  border: 0.1rem solid black;
-  border-radius: 0.5rem;
-  margin-bottom: 4rem;
-  transition: width 1s, height 1s;
-  cursor: pointer;
+.container-index {
+  padding-top: 1rem;
 }
 
-.post-home:hover {
-  border-radius: 0.5rem;
-  background-color: #f4f4f5;
+.post-home {
+  cursor: pointer;
+  padding-top: 1.5rem;
 }
 
 .article {
@@ -52,8 +48,7 @@ h1.post-page-title {
 .post-tags {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0.5rem 1rem 0.5rem;
-  border-top: 0.01rem solid black;
+  margin: 0.5rem 0.5rem 4.5rem 0.5rem;
 }
 
 .categories,
@@ -94,5 +89,5 @@ h1.post-page-title {
 }
 
 .space {
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
 }

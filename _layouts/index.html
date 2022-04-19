@@ -5,27 +5,29 @@ layout: default
 <div class="content">
   {{ content }} {% include pagination-newer.html %} {% for post in
   paginator.posts %}
-  <div class="hover">
-    <div
-      class="post-home"
-      onclick="location.href='{{ post.url | relative_url }}'"
-    >
-      <article class="article">
-        <h2 class="post-title post-title-home">{{ post.title }}</h2>
+  <div
+    class="post-home"
+    onclick="location.href='{{ post.url | relative_url }}'"
+  >
+    <article class="article">
+      <h2 class="post-title post-title-home">{{ post.title }}</h2>
 
-        <div class="excerpt">{{ post.excerpt }}</div>
+      <div class="excerpt">{{ post.excerpt }}</div>
 
-        <div class="author-date">
-          <div class="author">{{ post.author }}</div>
-          {% include post-date.html post=post %}
-        </div>
-      </article>
+      <div class="author-date">
+        <div class="author">{{ post.author }}</div>
+        {% include post-date.html post=post %}
+      </div>
+    </article>
 
-      {% if post.tags.size != 0 %} {% include post-tags.html post=post %} {%
-      else post.tags.size == 0 %}
-      <div class="space"></div>
-      {% endif %}
-    </div>
+    {% if post.tags.size != 0 %} {% include post-tags.html post=post %} {% else
+    post.tags.size == 0 %}
+    <div class="space"></div>
+    {% endif %}
   </div>
-  {% endfor %} {% include pagination-older.html %}
+
+  <!-- Generate an <hr> only if it isn't the last post of the page -->
+  {% if forloop.last == false %}
+  <hr style="border-top: 0.01rem solid #a8a29e" />
+  {% endif %} {% endfor %} {% include pagination-older.html %}
 </div>

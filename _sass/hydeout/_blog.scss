@@ -1,5 +1,7 @@
 .container-index {
-  padding-top: 1rem;
+  @media (min-width: 49rem) {
+    padding-top: 1rem;
+  }
 }
 
 .post-home {

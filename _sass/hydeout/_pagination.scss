@@ -27,8 +27,20 @@
   }
 }
 
+.pagination-older {
+  padding-top: 1.5rem;
+
+  @media (max-width: 49rem) {
+    padding-top: 0.5rem;
+  }
+}
+
 .pagination-newer {
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 2rem;
+
+  @media (max-width: 49rem) {
+    padding-bottom: 1rem;
+  }
 }
 
 // Push above header if newer on mobile
@@ -43,7 +55,7 @@
 
 // But not on page1
 .home.index #sidebar {
-  padding-bottom: $section-spacing;
+  padding-bottom: 0;
 }
 
 // Undo for larger screens

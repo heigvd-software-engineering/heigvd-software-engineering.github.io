@@ -1,12 +1,28 @@
 .container-index {
-  @media (min-width: 49rem) {
+  @media (min-width: 783px) {
     padding-top: 1rem;
   }
+}
+
+.hr-mobile {
+  @media (max-width: 783px) {
+    border-top: 0.01rem solid #a8a29e;
+    margin: 1.8rem 0 1.5rem;
+  }
+
+  margin: 0;
+  border: 0;
 }
 
 .post-home {
   cursor: pointer;
   padding-top: 1.5rem;
+}
+
+.first {
+  @media (max-width: 783px) {
+    padding-top: 0;
+  }
 }
 
 .article {

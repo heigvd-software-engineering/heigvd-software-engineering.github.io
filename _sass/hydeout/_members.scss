@@ -1,10 +1,11 @@
 /* General */
 
 .team {
-  padding-top: 1.2rem;
+  padding-top: 1.9rem;
+  align-self: flex-start;
 }
 
-.profile {
+.member {
   display: flex;
   flex-direction: column;
   padding-bottom: 3rem;
@@ -15,7 +16,7 @@
   align-items: center;
 }
 
-.profile-img {
+.member-img {
   width: 7rem;
   border-radius: 50%;
   margin-bottom: 0;
@@ -66,11 +67,11 @@
   .team {
     display: grid;
     grid: 2fr 2fr / 2fr 2fr 2fr 2fr 2fr 2fr;
-    column-gap: 5rem;
+    column-gap: 6.5rem;
     max-width: 100%;
   }
 
-  .profile {
+  .member {
     align-items: center;
     grid-area: auto;
   }
@@ -100,11 +101,11 @@
   .team {
     display: grid;
     grid: 2fr 2fr / 2fr 2fr 2fr 2fr 2fr;
-    column-gap: 5rem;
+    column-gap: 6.4rem;
     max-width: 100%;
   }
 
-  .profile {
+  .member {
     align-items: center;
     grid-area: auto;
   }
@@ -134,11 +135,11 @@
   .team {
     display: grid;
     grid: 2fr 2fr / 2fr 2fr 2fr 2fr;
-    column-gap: 5rem;
+    column-gap: 6.5rem;
     max-width: 100%;
   }
 
-  .profile {
+  .member {
     align-items: center;
     grid-area: auto;
   }
@@ -168,11 +169,11 @@
   .team {
     display: grid;
     grid: 2fr 2fr / 2fr 2fr 2fr;
-    column-gap: 5rem;
+    column-gap: 6.5rem;
     max-width: 100%;
   }
 
-  .profile {
+  .member {
     align-items: center;
     grid-area: auto;
   }
@@ -202,11 +203,11 @@
   .team {
     display: grid;
     grid: 2fr 2fr / 2fr 2fr;
-    column-gap: 5rem;
+    column-gap: 6.5rem;
     max-width: 100%;
   }
 
-  .profile {
+  .member {
     align-items: center;
     grid-area: auto;
   }
@@ -239,7 +240,7 @@
     padding-top: 2.5rem;
   }
 
-  .profile {
+  .member {
     align-items: left;
     padding-bottom: 4rem;
   }

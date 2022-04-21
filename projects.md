@@ -3,6 +3,7 @@ layout: page
 title: Projects
 order: 2
 sidebar_link: true
+permalink: /projects/
 ---
 
 <p class="message">

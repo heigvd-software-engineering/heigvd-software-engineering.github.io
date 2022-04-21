@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Markup: Text Readability Test"
+excerpt: Ceci est un résumé. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper turpis lectus, at porttitor magna aliquam et. Nunc vitae laoreet ligula. Vestibulum pulvinar vehicula elit, interdum luctus augue consequat id. Sed pulvinar feugiat dui sed tincidunt. Phasellus a mauris a nisl sagittis tincidunt et sollicitudin enim. Nullam enim sem, mattis sit amet laoreet sit amet, molestie sed sem.
 excerpt: "A large amount of sample text to test readability of a text heavy page."
 categories:
   - Markup

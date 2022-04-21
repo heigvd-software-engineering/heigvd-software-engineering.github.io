@@ -1,21 +1,27 @@
-{% comment %}
-  Check if we have a tags page active before linking to it.
-{% endcomment %}
-{% assign tags_page = false %}
-{% for node in site.pages %}
-  {% if node.layout == "tags" %}
-    {% assign tags_page = node %}
-  {% endif %}
-{% endfor %}
-
 <div class="post-tags">
   {% for tag in include.post.tags %}
-    {% if tags_page %}
-    <a href="{{ tags_page.url | relative_url }}#{{ tag | slugify }}">
-    {% else %}<span>{% endif %}
-      <span class="icon">
-        {% include svg/tags.svg %}
-      </span>&nbsp;<span class="tag-name">{{ tag }}</span>
-    {% if tags_page %}</a>{% else %}</span>{% endif %}
+    <div class="tags-div {{ tag }}-tag">
+
+      {% comment %}
+        Check if this tag has a corresponding page before decide
+        to link to it. This is an O(n^2) operations so consider removing
+        it and linking for all categories (or no categories) if this
+        site has a lot of pages and/or a lot of categories.
+      {% endcomment %}
+      {% assign tage_page = false %}
+      {% for node in site.pages %}
+        {% if node.tag == tag or node.title == tag %}
+          {% assign tag_page = node %}
+        {% endif %}
+      {% endfor %}
+
+      {% if tag_page %}
+        <a href="{{ tag_page.url | relative_url }}">
+          {{ tag_page.title | default: tag_page.tag }}
+        </a>
+      {% else %}
+        {{ tag }}
+      {% endif %}
+    </div>
   {% endfor %}
 </div>

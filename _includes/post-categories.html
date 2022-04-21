@@ -1,8 +1,6 @@
-<div class="post-meta">
-  <span class="post-date">{{ include.post.date | date_to_string }}</span>
-  <span class="post-categories">
-    {% for category in include.post.categories %}
-      &bull;
+<div class="post-categories">
+  {% for category in include.post.categories %}
+    <div class="categories {{ category }}">
 
       {% comment %}
         Check if this category has a corresponding page before decide
@@ -24,6 +22,6 @@
       {% else %}
         {{ category }}
       {% endif %}
-    {% endfor %}
-  </span>
+    </div>
+  {% endfor %}
 </div>

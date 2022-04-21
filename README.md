@@ -166,3 +166,38 @@ You can see the full set of partials you can replace in the
 
 There's also a bunch of minor tweaks and adjustments throughout the
 theme. Hope this works for you!
+
+### Drafts
+Drafts are posts without a date in the filename. They’re posts you’re still working on and don’t want to publish yet. To get up and running with drafts, create a _drafts folder in your site’s root and create your first draft:
+
+```
+.
+├── _drafts
+│   └── a-draft-post.md
+...
+```
+
+To preview your site with drafts, run ```bundle exec jekyll serve --livereload --drafts``` or simply ```npm run drafts```. Each will be assigned the value modification time of the draft file for its date, and thus you will see currently edited drafts as the latest posts.
+
+When the post is ready to be published, add the date at the beginning of the file name:
+
+```
+YEAR-MONTH-DAY-title.MARKUP
+```
+
+Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and MARKUP is the file extension representing the format used in the file. For example, the following are examples of valid post filenames:
+
+```
+2011-12-31-new-years-eve-is-awesome.md
+2012-09-12-how-to-write-a-blog.md
+```
+
+Finally, add your post to _posts directory:
+
+```
+.
+├── _posts
+│   ├── 2011-12-31-new-years-eve-is-awesome.md
+│   └── 2012-09-12-how-to-write-a-blog.md
+...
+```

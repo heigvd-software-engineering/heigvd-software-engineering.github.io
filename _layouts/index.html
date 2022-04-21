@@ -2,41 +2,36 @@
 layout: default
 ---
 
+{% if paginator.page == 1 %}
+<hr class="hr-mobile" />
+{% endif %}
+
 <div class="content">
-  {% include pagination-newer.html %}
+  {{ content }} {% include pagination-newer.html %} {% for post in
+  paginator.posts %}
+  <div
+    class="post-home{% if paginator.page == 1 and forloop.first == true %} first{% endif %}{% if forloop.first != true %} not-first{% endif %}"
+  >
+    <article class="article{% if forloop.first != true %} not-first{% endif %}">
+      <div
+        class="pointer"
+        onclick="location.href='{{ post.url | relative_url }}'"
+      >
+        <h2 class="post-title post-title-home">{{ post.title }}</h2>
 
-  {{ content }}
+        <div class="excerpt">{{ post.excerpt }}</div>
+      </div>
 
-  {% for post in paginator.posts %}
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h2>
-    {% include post-meta.html post=post %}
+      <div class="author-date">
+        <a class="author pointer" href="/members/"> {{ post.author }} </a>
+        {% include post-date.html post=post %}
+      </div>
+    </article>
 
-    {% if post.excerpt %}
-      {{ post.excerpt }}
-    {% else %}
-      {{ post.content }}
+    {% if post.tags.size != 0 %} {% include post-tags.html post=post %} {% else
+    post.tags.size == 0 %}
+    <div class="space{% if forloop.last == true %}-last{% endif %}"></div>
     {% endif %}
-
-    {% if post.excerpt %}
-      {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
-      {% capture content_words %}
-        {{ post.content | number_of_words }}
-      {% endcapture %}
-      {% capture excerpt_words %}
-        {{ post.excerpt | number_of_words }}
-      {% endcapture %}
-
-      {% if content_words != excerpt_words %}
-        <a href="{{ post.url | relative_url }}">More &hellip;</a>
-      {% endif %}
-    {% endif %}
-  </article>
-  {% endfor %}
-
-  {% include pagination-older.html %}
+  </div>
+  {% endfor %} {% include pagination-older.html %}
 </div>

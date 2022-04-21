@@ -2,6 +2,7 @@
 
 .team {
   padding-top: 1.9rem;
+  align-self: flex-start;
 }
 
 .member {
@@ -66,12 +67,12 @@
   .team {
     display: grid;
     grid: 2fr 2fr / 2fr 2fr 2fr 2fr 2fr 2fr;
-    column-gap: 5rem;
+    column-gap: 6.5rem;
     max-width: 100%;
   }
 
   .member {
-    align-items: flex-start;
+    align-items: center;
     grid-area: auto;
   }
 
@@ -100,12 +101,12 @@
   .team {
     display: grid;
     grid: 2fr 2fr / 2fr 2fr 2fr 2fr 2fr;
-    column-gap: 5rem;
+    column-gap: 6.4rem;
     max-width: 100%;
   }
 
   .member {
-    align-items: flex-start;
+    align-items: center;
     grid-area: auto;
   }
 
@@ -134,12 +135,12 @@
   .team {
     display: grid;
     grid: 2fr 2fr / 2fr 2fr 2fr 2fr;
-    column-gap: 5rem;
+    column-gap: 6.5rem;
     max-width: 100%;
   }
 
   .member {
-    align-items: flex-start;
+    align-items: center;
     grid-area: auto;
   }
 
@@ -168,12 +169,12 @@
   .team {
     display: grid;
     grid: 2fr 2fr / 2fr 2fr 2fr;
-    column-gap: 5rem;
+    column-gap: 6.5rem;
     max-width: 100%;
   }
 
   .member {
-    align-items: flex-start;
+    align-items: center;
     grid-area: auto;
   }
 
@@ -202,12 +203,12 @@
   .team {
     display: grid;
     grid: 2fr 2fr / 2fr 2fr;
-    column-gap: 5rem;
+    column-gap: 6.5rem;
     max-width: 100%;
   }
 
   .member {
-    align-items: flex-start;
+    align-items: center;
     grid-area: auto;
   }
 
@@ -240,7 +241,7 @@
   }
 
   .member {
-    align-items: flex-start;
+    align-items: left;
     padding-bottom: 4rem;
   }
 

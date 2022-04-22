@@ -5,14 +5,13 @@ layout: default
 <header>
   <h1 class="post-title post-page-title">{{ page.title }}</h1>
 </header>
-<div class="content">
-  {% include post-date.html post=page %}
-
-  <div class="post-body">
-    {{ content }}
+<div class="post-content">
+  <div class="author-date">
+    <a class="author pointer" href="/members/"> {{ page.author }} </a>
+    {% include post-date.html post=page %}
   </div>
 
-  {% include post-categories.html post=page %}
+  <div class="post-body">{{ content }}</div>
 
-  {% include related_posts.html %}
+  {% include post-tags.html post=page %}
 </div>

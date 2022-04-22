@@ -13,5 +13,9 @@ layout: default
 
   <div class="post-body">{{ content }}</div>
 
-  {% include post-tags.html post=page %}
+  <div class="tags-share">
+    {% if page.tags.size != 0 %} {% include post-tags.html post=page %} {% endif
+    %}
+    <div class="sharethis-inline-share-buttons share"></div>
+  </div>
 </div>

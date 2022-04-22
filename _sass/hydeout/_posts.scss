@@ -103,24 +103,37 @@ button.disqus-load {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 2rem;
+  padding: 0 0 2.5rem;
 }
 
 .post-categories,
 .post-tags {
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem 0.5rem 0 0;
 }
 
 .categories,
 .tags-div {
   padding: 0 0.5rem 0;
-  margin: 1rem 1rem 0 0;
+  margin: 0.5rem 1rem 0.5rem 0;
   border-radius: 1rem;
   font-size: 12px;
   text-align: center;
   text-transform: capitalize;
   color: #a8a29e;
   background-color: #e7e5e4;
+}
+
+.tags-share {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.25rem 0;
+}
+
+.share {
+  min-width: 11rem;
+
+  @media (min-width: 820px) {
+    min-width: 9rem;
+  }
 }

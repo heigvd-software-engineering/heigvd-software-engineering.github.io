@@ -1,0 +1,39 @@
+.project {
+  padding: 1rem 0 2rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.title-contributors {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.project-title {
+  margin-bottom: 0.25rem;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+}
+
+.contributors,
+.client,
+.project-date {
+  color: $body-muted;
+}
+
+.excerpt {
+  text-align: justify;
+}
+
+.client-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}

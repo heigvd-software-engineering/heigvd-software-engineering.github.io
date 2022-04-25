@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<header>
+  <h1 class="page-title">{{ page.title }}</h1>
+</header>
+
+<div class="content">
+  {% include pagination-newer.html %} {% for project in site.projects %}
+  <div class="project">
+    <div
+      class="pointer"
+      onclick="location.href='{{ project.url | relative_url }}'"
+    >
+      <div class="title-contributors">
+        <h2 class="project-title">{{ project.title }}</h2>
+        <a class="contributors" href="../members"> {{ project.contributors }} </a>
+      </div>
+
+      <div class="excerpt">{{ project.excerpt }}</div>
+    </div>
+
+    <div class="client-date">
+      <span class="client"> {{ project.client }} </span>
+      {% include project-date.html project=project %}
+    </div>
+  </div>
+  {% endfor %} {% include pagination-older.html %}
+</div>

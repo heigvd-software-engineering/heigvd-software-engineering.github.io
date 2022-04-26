@@ -3,7 +3,7 @@ layout: project
 title: Lorem ipsum
 contributors: Daniel Palumbo, Miguel Santamaria, Ludovic Delafontaine
 client: TL
-start_date: 2022-04-22
+start_date: 2022-04-03
 end_date: 2022-04-25
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla ex ante, sit amet pellentesque ante maximus nec. Donec at dolor mollis, venenatis eros eget, vehicula tortor. Curabitur faucibus justo eget nunc ultrices, posuere consectetur nunc egestas. Mauris eget consectetur lectus. Curabitur convallis massa quam, cursus porta felis elementum vel. Fusce vitae ipsum vel ipsum facilisis mollis.
 ---

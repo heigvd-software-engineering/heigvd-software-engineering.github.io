@@ -7,7 +7,8 @@ layout: default
 </header>
 
 <div class="content">
-  {% include pagination-newer.html %} {% for project in site.projects %}
+  {% include pagination-newer.html %} {% assign projects = site.projects | sort:
+  "start_date" | reverse %} {% for project in projects limit: 5 %}
   <div class="project">
     <div
       class="pointer"
@@ -15,7 +16,9 @@ layout: default
     >
       <div class="title-contributors">
         <h2 class="project-title">{{ project.title }}</h2>
-        <a class="contributors" href="../members"> {{ project.contributors }} </a>
+        <a class="contributors" href="../members">
+          {{ project.contributors }}
+        </a>
       </div>
 
       <div class="excerpt">{{ project.excerpt }}</div>

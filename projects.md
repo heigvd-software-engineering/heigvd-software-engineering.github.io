@@ -3,5 +3,7 @@ layout: projects
 title: Projects
 order: 2
 sidebar_link: true
-permalink: /projects/
+pagination:
+    enabled: true
+    collection: 'projects'
 ---

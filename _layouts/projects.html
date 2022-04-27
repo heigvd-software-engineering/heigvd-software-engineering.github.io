@@ -7,7 +7,7 @@ layout: default
 </header>
 
 <div class="content">
-  {% include pagination-newer.html %} {% assign projects = site.projects | sort:
+  {% include pagination-newer.html %} {% assign projects = paginator.posts | sort:
   "start_date" | reverse %} {% for project in projects limit: 5 %}
   <div class="project">
     <div

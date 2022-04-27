@@ -1,6 +1,6 @@
-<div class="post-categories">
+<div class="post-categories{% if url != post.url %}-home{% endif %}">
   {% for category in include.post.categories %}
-    <div class="categories {{ category }}">
+    <div class="categories{% if url != post.url %}-home{% endif %} {{ category }}">
 
       {% comment %}
         Check if this category has a corresponding page before decide

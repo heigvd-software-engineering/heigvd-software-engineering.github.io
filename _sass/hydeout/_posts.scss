@@ -84,3 +84,56 @@ article + *,
 button.disqus-load {
   margin-top: 1em;
 }
+
+// Our customization
+
+.post-content {
+  background: $body-bg;
+  color: $body-color;
+  padding: 0 2rem 2rem;
+
+  @media (min-width: 783px) {
+    max-width: 38rem;
+    padding: 0;
+  }
+}
+
+.author-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 2.5rem;
+}
+
+.post-categories,
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categories,
+.tags-div {
+  padding: 0 0.5rem 0;
+  margin: 0.5rem 1rem 0.5rem 0;
+  border-radius: 1rem;
+  font-size: 12px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #a8a29e;
+  background-color: #e7e5e4;
+}
+
+.tags-share {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.25rem 0;
+}
+
+.share {
+  min-width: 12rem;
+
+  @media (min-width: 820px) {
+    min-width: 10rem;
+  }
+}

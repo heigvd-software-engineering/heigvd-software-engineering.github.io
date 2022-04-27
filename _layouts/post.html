@@ -5,14 +5,17 @@ layout: default
 <header>
   <h1 class="post-title post-page-title">{{ page.title }}</h1>
 </header>
-<div class="content">
-  {% include post-date.html post=page %}
-
-  <div class="post-body">
-    {{ content }}
+<div class="post-content">
+  <div class="author-date">
+    <a class="author pointer" href="/members/"> {{ page.author }} </a>
+    {% include post-date.html post=page %}
   </div>
 
-  {% include post-categories.html post=page %}
+  <div class="post-body">{{ content }}</div>
 
-  {% include related_posts.html %}
+  <div class="tags-share">
+    {% if page.tags.size != 0 %} {% include post-tags.html post=page %} {% endif
+    %}
+    <div class="sharethis-inline-share-buttons share"></div>
+  </div>
 </div>

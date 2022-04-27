@@ -1,6 +1,6 @@
-<div class="post-tags">
+<div class="post-tags{% if url != post.url %}-home{% endif %}">
   {% for tag in include.post.tags %}
-    <div class="tags-div {{ tag }}-tag">
+    <div class="tags-div{% if url != post.url %}-home{% endif %} {{ tag }}-tag">
 
       {% comment %}
         Check if this tag has a corresponding page before decide

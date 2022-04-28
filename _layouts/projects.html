@@ -2,14 +2,18 @@
 layout: default
 ---
 
-<header>
+{% if paginator.page == 1 %}
+<header class="projects-home">
   <h1 class="page-title">{{ page.title }}</h1>
 </header>
+{% endif %}
 
 <div class="content">
-  {% include pagination-newer.html %} {% assign projects = paginator.posts | sort:
-  "start_date" | reverse %} {% for project in projects limit: 5 %}
-  <div class="project">
+  {% include pagination-newer.html %} {% assign projects = paginator.posts |
+  sort: "start_date" | reverse %} {% for project in projects limit: 5 %}
+  <div
+    class="project{% if paginator.page == 1 and forloop.first == true %} first{% endif %}{% if forloop.first == true and paginator.page != 1 %} first-on-page{% endif %}{% if forloop.last == true %} last-on-page{% endif %}"
+  >
     <div
       class="pointer"
       onclick="location.href='{{ project.url | relative_url }}'"

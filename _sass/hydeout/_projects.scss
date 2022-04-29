@@ -1,17 +1,17 @@
 .container-projects {
   padding-top: 0;
 
-  @media (min-width: 783px) {
+  @media (min-width: 784px) {
     padding-top: 1.1rem;
   }
 }
 
 .projects-home {
-  @media (min-width: 783px) {
+  @media (min-width: 784px) {
     padding-top: 1.3rem;
   }
 
-  @media (max-width: 782px) {
+  @media (max-width: 783px) {
     margin-bottom: 0;
   }
 }
@@ -29,7 +29,7 @@
 .first-on-page {
   padding-top: 3rem;
 
-  @media (max-width: 782px) {
+  @media (max-width: 783px) {
     padding-top: 2.9rem;
   }
 }

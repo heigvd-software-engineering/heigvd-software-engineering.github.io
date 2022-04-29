@@ -22,6 +22,21 @@
   margin-bottom: 0;
 }
 
+.user-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 7rem;
+  height: 7rem;
+  border: solid 0.05rem #515151;
+  border-radius: 50%;
+}
+
+.user {
+  font-size: 4rem;
+  max-width: 100%;
+}
+
 .name-occupation-icons {
   display: flex;
   flex-direction: column;

@@ -182,6 +182,9 @@ body {
 
   #sidebar {
     position: fixed;
+    @media (max-height: 781px) {
+      bottom: 0;
+    }
 
     // Attach to bottom or top of window
     @if $sidebar-sticky {

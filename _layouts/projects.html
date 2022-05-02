@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{% if paginator.page == 1 %}
+<header class="projects-home">
+  <h1 class="page-title">{{ page.title }}</h1>
+</header>
+{% endif %}
+
+<div class="content">
+  {% include pagination-newer.html %} {% assign projects = paginator.posts |
+  sort: "start_date" | reverse %} {% for project in projects limit: 5 %}
+  <div
+    class="project{% if paginator.page == 1 and forloop.first == true %} first{% endif %}{% if forloop.first == true and paginator.page != 1 %} first-on-page{% endif %}{% if forloop.last == true %} last-on-page{% endif %}"
+  >
+    <div
+      class="pointer"
+      onclick="location.href='{{ project.url | relative_url }}'"
+    >
+      <div class="title-contributors">
+        <h2 class="project-title">{{ project.title }}</h2>
+        <a class="contributors" href="../members">
+          {{ project.contributors }}
+        </a>
+      </div>
+
+      <div class="excerpt">{{ project.excerpt }}</div>
+    </div>
+
+    <div class="client-date">
+      <span class="client"> {{ project.client }} </span>
+      {% include project-date.html project=project %}
+    </div>
+  </div>
+  {% endfor %} {% include pagination-older.html %}
+</div>

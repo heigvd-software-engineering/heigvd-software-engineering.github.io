@@ -52,6 +52,12 @@ body {
   .site-title .back-arrow { margin-right: 0.5rem; }
 }
 
+.index > #sidebar .site-title {
+  @media (max-width: 783px) {
+    font-size: 2.5rem;
+  }
+}
+
 .content {
   background: $body-bg;
   color: $body-color;
@@ -80,13 +86,20 @@ body {
   Mobile view
 ----------------------------------------------------------- */
 
-// Hide secondary nav content in sidebar
-// Hide lead paragraph in sidebar
-#sidebar {
-  header ~ *,
-  header ~ nav,
-  p.lead {
+// Hide secondary nav content and lead paragraph in sidebar on other pages than home page and back-arrow on home page
+@media (max-width: 783px) {
+  .index .back-arrow {
     display: none;
+  }
+
+  .projects > #sidebar,
+  .members > #sidebar,
+  .category > #sidebar {
+    header ~ *,
+    header ~ nav,
+    p.lead {
+      display: none;
+    }
   }
 }
 
@@ -169,6 +182,9 @@ body {
 
   #sidebar {
     position: fixed;
+    @media (max-height: 781px) {
+      bottom: 0;
+    }
 
     // Attach to bottom or top of window
     @if $sidebar-sticky {

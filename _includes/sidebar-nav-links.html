@@ -1,6 +1,6 @@
 <nav id="sidebar-nav-links">
   {% if site.sidebar_home_link %}
-    <a class="home-link {% if page.url == '/' %} active{% endif %}"
+    <a class="home-link {% if page.layout == 'index' %} active{% endif %}"
         href="{{ "/" | relative_url }}">Blog</a>
   {% endif %}
   {% if site.sidebar_blog_link %}

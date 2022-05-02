@@ -4,10 +4,16 @@
 {% endcomment %}
 {% assign pages_list = site.pages|sort:"order" %}
 {% for node in pages_list %}
-  {% if node.title != null %}
+  {% if node.title == "Projects" %}
+    {% if node.url == "/projects/index.html" %}
+      <a class="page-link{% if page.layout == node.layout %} active{% endif %}"
+          href="{{ node.layout | relative_url }}">{{ node.title }}</a>
+  {% endif %}
+  {% endif %}
+  {% if node.title == "Members" %}
     {% if node.sidebar_link %}
-      <a class="page-link {% if page.url == node.url %} active{% endif %}"
-          href="{{ node.url | relative_url }}">{% if node.short_title != null %}{{ node.short_title }}{% else %}{{ node.title }}{% endif %}</a>
+      <a class="page-link{% if page.layout == node.layout %} active{% endif %}"
+          href="{{ node.layout | relative_url }}">{{ node.title }}</a>
     {% endif %}
   {% endif %}
 {% endfor %}

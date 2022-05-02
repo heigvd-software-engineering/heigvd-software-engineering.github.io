@@ -38,5 +38,5 @@ pagination:
   enabled: true
   per_page: 5
   permalink: 'page:num/'
-  title: ''
+  title: ':title'
   sort_reverse: true

@@ -13,7 +13,7 @@ layout: default
       {% if member.img %}<img
         class="member-img"
         src={{ member.img }}
-        alt={{ member.name }}
+        alt="{{ member.name }}"
       />{% else %}<div class="user-div"><i class="fa-solid fa-user user"></i></div>{% endif %}
       <div class="name-occupation-icons">
         <span class="name">{{ member.name }}</span>

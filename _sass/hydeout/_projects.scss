@@ -16,7 +16,7 @@
   }
 }
 
-.project {
+.project-card {
   padding: 1.6rem 0 2rem;
 }
 
@@ -48,7 +48,8 @@
   margin-bottom: 1.5rem;
 }
 
-.project-title {
+.project-title,
+.project-page-title {
   margin: 0 0 0.25rem;
 }
 
@@ -72,4 +73,12 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 1.5rem;
+}
+
+.project-picture {
+  padding: 2rem 0 0.5rem;
+}
+
+.project-body {
+  text-align: justify;
 }

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<header>
+  <h1 class="project-page-title">{{ page.title }}</h1>
+  <a class="contributors" href="/members/">{{ page.contributors }}</a>
+</header>
+
+<div class="content">
+  <div class="client-date">
+    <span class="client"> {{ page.client }} </span>
+    {% include project-date.html project=page %}
+  </div>
+
+  <img
+    class="project-picture"
+    src="/pictures/projects/Himalaya, Népal.jfif"
+    alt="{{ page.title }}"
+  />
+
+  <div class="project-body">{{ content }}</div>
+</div>

@@ -92,7 +92,9 @@ body {
     display: none;
   }
 
+  .post > #sidebar,
   .projects > #sidebar,
+  .project > #sidebar,
   .members > #sidebar,
   .category > #sidebar {
     header ~ *,

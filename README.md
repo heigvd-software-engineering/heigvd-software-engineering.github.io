@@ -112,7 +112,7 @@ You can see the full set of partials you can replace in the
 * Hydeout adds a new "category" layout for dedicated category pages.
   Category pages are automatically added to the sidebar. All other pages
   must have `sidebar_link: true` in their front matter to show up in
-  the sidebar. To create a category page, use the `category` layout"
+  the sidebar. To create a category page, use the `category` layout:
 
   ```
   ---
@@ -168,6 +168,7 @@ There's also a bunch of minor tweaks and adjustments throughout the
 theme. Hope this works for you!
 
 ## Drafts
+
 Drafts are posts without a date in the filename. They’re posts you’re still working on and don’t want to publish yet. To get up and running with drafts, create a _drafts folder in your site’s root and create your first draft:
 
 ```
@@ -201,3 +202,27 @@ Finally, add your post to _posts directory:
 │   └── 2012-09-12-how-to-write-a-blog.md
 ...
 ```
+
+## Projects
+
+If you want to add a project to the blog, you should create a `project-name.md` file. It should be like so:
+
+```
+---
+layout: project
+title:
+contributors: (coma separated)
+client:
+start_date: (YEAR-MONTH-DAY)
+end_date: (YEAR-MONTH-DAY) (or nothing if still in progress)
+excerpt:
+img: /pictures/projects/...
+---
+
+Content of the project.
+
+```
+
+You can also use the `_drafts` folder to keep your changes but notice that the layout is not the same (`post`) for drafts.
+
+When your file is ready, just add it in the `_projects` folder.

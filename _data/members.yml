@@ -5,19 +5,19 @@
   github: https://github.com/bchapuis
   linkedin: https://www.linkedin.com/in/bertilchapuis/
   site_web: https://www.bertil.ch/
-  img: "../pictures/Bertil.jpg"
+  img: "../pictures/members/Bertil.jpg"
 
 - name: Marcel Graf
   occupation: Professeur HES associé
   description:
   mail: marcel.graf@heig-vd.ch
-  img: "../pictures/Marcel.jpeg"
+  img: "../pictures/members/Marcel.jpeg"
 
 - name: Fabien Dutoit
   occupation: Maître d'enseignement
   description:
   mail: fabien.dutoit@heig-vd.ch
-  img: "../pictures/Fabien.png"
+  img: "../pictures/members/Fabien.png"
 
 - name: Daniel Palumbo
   occupation: Chargé de Ra&D HES
@@ -25,7 +25,7 @@
   mail: daniel.palumbo@heig-vd.ch
   github: https://github.com/danpa32
   linkedin: https://www.linkedin.com/in/daniel-palumbo-a85403152/
-  img: "../pictures/Daniel.jpeg"
+  img: "../pictures/members/Daniel.jpeg"
 
 - name: Adrien Allemand
   occupation: Collaborateur Ra&D HES
@@ -33,7 +33,7 @@
   mail: adrien.allemand@heig-vd.ch
   github: https://github.com/adrienallemand
   linkedin: https://www.linkedin.com/in/adrienallemand/
-  img: "../pictures/Adrien.jpg"
+  img: "../pictures/members/Adrien.jpg"
 
 - name: Nadir Benallal
   occupation: Collaborateur Ra&D HES
@@ -41,7 +41,7 @@
   mail: nadir.benallal@heig-vd.ch
   github: https://github.com/Moufblu
   linkedin: https://www.linkedin.com/in/nadir-benallal-1b2b5289/
-  img: "../pictures/Nadir.jpeg"
+  img: "../pictures/members/Nadir.jpeg"
 
 - name: Nohan Budry
   occupation: Collaborateur Ra&D HES
@@ -49,7 +49,7 @@
   mail: nohan.budry@heig-vd.ch
   github: https://github.com/Jack-Eri
   linkedin: https://www.linkedin.com/in/nohan-budry/
-  img: "../pictures/Nohan.jpeg"
+  img: "../pictures/members/Nohan.jpeg"
 
 - name: Ludovic Delafontaine
   occupation: Collaborateur Ra&D HES
@@ -57,7 +57,7 @@
   mail: ludovic.delafontaine@heig-vd.ch
   gitlab: https://gitlab.com/ludelafo
   linkedin: https://www.linkedin.com/in/ludelafo/
-  img: "../pictures/Ludovic.png"
+  img: "../pictures/members/Ludovic.png"
 
 - name: Antoine Drabble
   occupation: Collaborateur Ra&D HES
@@ -65,7 +65,7 @@
   mail: antoine.drabble@heig-vd.ch
   github: https://github.com/Drabble
   linkedin: https://www.linkedin.com/in/antoine-drabble/
-  img: "../pictures/Antoine.jpeg"
+  img: "../pictures/members/Antoine.jpeg"
 
 - name: Didier Page
   occupation: Assistant HES académique
@@ -73,7 +73,7 @@
   mail: didier.page@heig-vd.ch
   github: https://github.com/pagedidier
   linkedin: https://www.linkedin.com/in/didier-page-530251bb/
-  img: "../pictures/Didier.jpeg"
+  img: "../pictures/members/Didier.jpeg"
 
 - name: Miguel Santamaria
   occupation: Collaborateur Ra&D HES
@@ -81,7 +81,7 @@
   mail: miguel.santamaria@heig-vd.ch
   github: https://github.com/edri
   linkedin: https://www.linkedin.com/in/migsantamaria/
-  img: "../pictures/Miguel.jpeg"
+  img: "../pictures/members/Miguel.jpeg"
 
 - name: James Smith
   occupation: Assistant HES académique
@@ -89,7 +89,7 @@
   mail: james.smith@heig-vd.ch
   github: https://github.com/swerky
   linkedin: https://www.linkedin.com/in/james-smith-119b47b1/
-  img: "../pictures/James.jpg"
+  img: "../pictures/members/James.jpg"
 
 - name: Guy-Laurent Subri
   occupation: Collaborateur Ra&D HES
@@ -104,4 +104,4 @@
   mail: yanis.ouadahi@heig-vd.ch
   github: https://github.com/Yahia1018
   linkedin: https://www.linkedin.com/in/yanisouadahi/
-  img: "../pictures/Yanis.png"
+  img: "../pictures/members/Yanis.png"

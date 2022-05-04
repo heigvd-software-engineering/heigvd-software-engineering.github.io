@@ -7,17 +7,17 @@ layout: default
   <a class="contributors" href="/members/">{{ page.contributors }}</a>
 </header>
 
-<div class="content">
+<div class="content project-page-content">
   <div class="client-date">
     <span class="client"> {{ page.client }} </span>
     {% include project-date.html project=page %}
   </div>
 
-  <img
+  {% if page.img %}<img
     class="project-picture"
-    src="/pictures/projects/Himalaya, Népal.jfif"
+    src="{{ page.img }}"
     alt="{{ page.title }}"
-  />
+  />{% endif %}
 
   <div class="project-body">{{ content }}</div>
 </div>

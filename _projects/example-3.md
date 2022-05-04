@@ -6,6 +6,7 @@ client: HEIG-VD
 start_date: 2022-05-03
 end_date: 2022-05-22
 excerpt: Nunc porta massa tellus, a porttitor neque finibus sed. Sed facilisis maximus est. Donec porta euismod efficitur. Suspendisse dictum justo sit amet ipsum malesuada volutpat. Etiam laoreet hendrerit neque, ac vulputate metus. Nam nec ligula tempor, consequat mi vel, cursus neque. Nunc commodo, erat a vestibulum molestie, orci dui condimentum mi, eget ullamcorper dui ligula eu dolor.
+img: /pictures/projects/Himalaya, Népal.jfif
 ---
 
 ### Generated nunc porta

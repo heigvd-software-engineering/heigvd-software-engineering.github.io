@@ -6,6 +6,7 @@ client: TL
 start_date: 2022-04-22
 end_date: 2022-04-25
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla ex ante, sit amet pellentesque ante maximus nec. Donec at dolor mollis, venenatis eros eget, vehicula tortor. Curabitur faucibus justo eget nunc ultrices, posuere consectetur nunc egestas. Mauris eget consectetur lectus. Curabitur convallis massa quam, cursus porta felis elementum vel. Fusce vitae ipsum vel ipsum facilisis mollis.
+img: /pictures/projects/Himalaya, Népal.jfif
 ---
 
 ### Generated lorem ipsum

@@ -16,6 +16,12 @@
   }
 }
 
+.project-page-content {
+  @media (max-width: 783px) {
+    padding: 0 2rem;
+  }
+}
+
 .project-card {
   padding: 1.6rem 0 2rem;
 }

@@ -1,13 +1,18 @@
-# Hydeout
+# HEIG-VD Software Engineering blog
 
-Hydeout updates the original [Hyde](https://github.com/poole/hyde)
-theme for [Jekyll](http://jekyllrb.com) 3.x and 4.x and adds new functionality.
+This blog is all about knowledge sharing and exposure of the heig-vd software engineering team projects, efforts and improvements.
+
+## People we want to share with
+
+As a blog is about creating posts, we address those to engineers, technical advisor, professors and more. To not forget how we share: "Minimum Interface, Content First, Maximum knowledge shared".
+
+For that, we used the [Hydeout](https://github.com/fongandrew/hydeout) theme, an updated version of the [Hyde](https://github.com/poole/hyde) theme for [Jekyll](http://jekyllrb.com) 3.x and 4.x. It adds new functionality and is maintained.
 
 ![Desktop](/_screenshots/1.png?raw=true)
 <img alt="Mobile home page" src="/_screenshots/2.png?raw=true" width="300px" />
 <img alt="Mobile post page" src="/_screenshots/3.png?raw=true" width="300px" />
 
-### Usage
+## Installation
 
 Hydeout is available as the `jekyll-theme-hydeout` Ruby Gem.
 Add `gem "jekyll-theme-hydeout", "~> 4.1"` to your Gemfile and run

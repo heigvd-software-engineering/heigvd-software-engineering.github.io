@@ -22,6 +22,18 @@ If you're installing on Github pages, you may also have to add
 `remote_theme: fongandrew/hydeout` to your `_config.yml`. [See the Github
 instructions for more details.](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)
 
+## Run the project
+
+To see the drafts of your project:
+```
+npm run drafts
+```
+
+To see the the posted posts and run the project like in production
+```
+npm run start
+```
+
 ## Jekyll-paginate-v2
 
 In order to paginate other pages than the blog page, we need to replace the `jekyll-paginate` plugin by a new one: [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2).

@@ -22,20 +22,19 @@ If you're installing on Github pages, you may also have to add
 `remote_theme: fongandrew/hydeout` to your `_config.yml`. [See the Github
 instructions for more details.](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)
 
-Hydeout uses pagination, so if you have an `index.md`, you'll need to swap
-it with an `index.html` that uses the `index` layout:
+## Jekyll-paginate-v2
+
+In order to paginate other pages than the blog page, we need to replace the `jekyll-paginate` plugin by a new one: [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2).
+
+As we already added the `gem "jekyll-paginate-v2", "~> 3.0"` to the Gemfile, the `bundle install` command should install it. If necessary, run:
 
 ```
----
-layout: index
-title: Home
----
+gem install jekyll-paginate-v2
 ```
 
-You'll also need to add a setting to `_config.yml` telling Jekyll how many posts
-to include per page (e.g. `paginate: 5`).
+The `_config.yml` and the pages are already configured too, but you can find informations [here](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration).
 
-### Keep It Simple
+## Keep It Simple
 
 In keeping with the original Hyde theme, Hydeout aims to keep the overall
 design lightweight and plugin-free. JavaScript is currently limited only
@@ -45,7 +44,7 @@ variables).
 Hydeout makes heavy use of Flexbox in its CSS. If Flexbox is not available,
 the CSS degrades into a single column layout.
 
-### Customization
+## Customization
 
 Hydeout replaces Hyde's class-based theming with the use
 of the following SASS variables:
@@ -103,7 +102,7 @@ You can see the full set of partials you can replace in the
   title is loaded here. If you're overriding that font in the CSS, be sure
   to also remove the font load reference here.
 
-### New Features
+## New Features
 
 * Hydeout adds a new tags page (accessible in the sidebar). Just create a
   new page with the tags layout:
@@ -118,7 +117,7 @@ You can see the full set of partials you can replace in the
 * Hydeout adds a new "category" layout for dedicated category pages.
   Category pages are automatically added to the sidebar. All other pages
   must have `sidebar_link: true` in their front matter to show up in
-  the sidebar. To create a category page, use the `category` layout"
+  the sidebar. To create a category page, use the `category` layout:
 
   ```
   ---
@@ -162,6 +161,7 @@ You can see the full set of partials you can replace in the
   disqus:
     shortname: my-disqus-shortname
   ```
+  You must sign up for a Disqus account [here](https://disqus.com/) if you haven't already. [More informations](https://desiredpersona.com/disqus-comments-jekyll/).
 
   If you don't want Disqus or want to use something else, override
   `comments.html`.
@@ -172,7 +172,8 @@ You can see the full set of partials you can replace in the
 There's also a bunch of minor tweaks and adjustments throughout the
 theme. Hope this works for you!
 
-### Drafts
+## Drafts
+
 Drafts are posts without a date in the filename. They’re posts you’re still working on and don’t want to publish yet. To get up and running with drafts, create a _drafts folder in your site’s root and create your first draft:
 
 ```
@@ -206,3 +207,27 @@ Finally, add your post to _posts directory:
 │   └── 2012-09-12-how-to-write-a-blog.md
 ...
 ```
+
+## Projects
+
+If you want to add a project to the blog, you should create a `project-name.md` file. It should be like so:
+
+```
+---
+layout: project
+title:
+contributors: (coma separated)
+client:
+start_date: (YEAR-MONTH-DAY)
+end_date: (YEAR-MONTH-DAY) (or nothing if still in progress)
+excerpt:
+img: /pictures/projects/...
+---
+
+Content of the project.
+
+```
+
+You can also use the `_drafts` folder to keep your changes but notice that the layout is not the same (`post`) for drafts.
+
+When your file is ready, just add it in the `_projects` folder.

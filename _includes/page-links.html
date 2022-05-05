@@ -6,7 +6,7 @@
 {% for node in pages_list %}
   {% if node.title == "Projects" %}
     {% if node.url == "/projects/index.html" %}
-      <a class="page-link{% if page.layout == node.layout %} active{% endif %}"
+      <a class="page-link{% if page.layout == node.layout or page.layout == 'project' %} active{% endif %}"
           href="{{ node.layout | relative_url }}">{{ node.title }}</a>
   {% endif %}
   {% endif %}

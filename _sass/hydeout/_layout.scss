@@ -92,9 +92,13 @@ body {
     display: none;
   }
 
+  .post > #sidebar,
   .projects > #sidebar,
+  .project > #sidebar,
   .members > #sidebar,
-  .category > #sidebar {
+  .category > #sidebar,
+  .tags > #sidebar,
+  .search > #sidebar {
     header ~ *,
     header ~ nav,
     p.lead {

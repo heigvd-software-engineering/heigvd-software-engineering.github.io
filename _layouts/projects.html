@@ -12,7 +12,7 @@ layout: default
   {% include pagination-newer.html %} {% assign projects = paginator.posts |
   sort: "start_date" | reverse %} {% for project in projects limit: 5 %}
   <div
-    class="project{% if paginator.page == 1 and forloop.first == true %} first{% endif %}{% if forloop.first == true and paginator.page != 1 %} first-on-page{% endif %}{% if forloop.last == true %} last-on-page{% endif %}"
+    class="project-card{% if paginator.page == 1 and forloop.first == true %} first{% endif %}{% if forloop.first == true and paginator.page != 1 %} first-on-page{% endif %}{% if forloop.last == true %} last-on-page{% endif %}"
   >
     <div
       class="pointer"

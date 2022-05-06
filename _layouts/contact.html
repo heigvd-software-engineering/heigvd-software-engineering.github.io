@@ -6,18 +6,18 @@ layout: default
   <h1 class="page-title">{{ page.title }}</h1>
 </header>
 
-{% unless page.content == '' %} {{ content }} {% endunless %}
+<div class="contact-members">
+  {% for member in site.data.members limit: 3 %}
+  <div class="contact-member">
+    <img class="contact-img" src="{{ member.img }}" alt="{{ member.name }}" />
 
-<ul class="posts-list">
-  {% assign category = page.category | default: page.title %} {% for post in
-  site.categories[category] %}
-  <li>
-    <h3>
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-        <small>{{ post.date | date_to_string }}</small>
-      </a>
-    </h3>
-  </li>
+    <div class="name-contact-me">
+      <span class="contact-name">{{ member.name }}</span>
+      <a href="mailto:{{ member.mail }}" class="contact-me"
+        ><i class="fa-regular fa-address-card address-card"></i
+        ><span>Contact me</span></a
+      >
+    </div>
+  </div>
   {% endfor %}
-</ul>
+</div>

@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Y-Parc HEIG-VD - Software Engineering</title>
+      <link>https://heigvd-software-engineering.github.io/blog</link>
+      <description>Blog de l&#39;équipe</description>
+      <language>fr-CH</language>
+      <managingEditor>undefined (Daniel Palumbo)</managingEditor>
+      <webMaster>undefined (Daniel Palumbo)</webMaster>
+      <lastBuildDate>Tue, 15 Feb 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://heigvd-software-engineering.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://heigvd-software-engineering.github.io/blog/plandetudes</guid>
+    <title>Création du blog</title>
+    <link>https://heigvd-software-engineering.github.io/blog/plandetudes</link>
+    <description>Mise en place d&#39;un blog pour l&#39;équipe</description>
+    <pubDate>Tue, 15 Feb 2022 00:00:00 GMT</pubDate>
+    <author>undefined (Daniel Palumbo)</author>
+    <category>Fun</category><category>Nouvelles</category>
+  </item>
+
+    </channel>
+  </rss>

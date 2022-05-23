@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<header>
+  <h1 class="page-title">{{ page.title }}</h1>
+</header>
+
+<div class="contact-members">
+  {% for member in site.data.members limit: 3 %}
+  <div class="contact-member">
+    <img class="contact-img" src="{{ member.img }}" alt="{{ member.name }}" />
+
+    <div class="name-contact-me">
+      <span class="contact-name">{{ member.name }}</span>
+      <a href="mailto:{{ member.mail }}" class="contact-me"
+        ><i class="fa-regular fa-address-card address-card"></i
+        ><span>Contact me</span></a
+      >
+    </div>
+  </div>
+  {% endfor %}
+</div>

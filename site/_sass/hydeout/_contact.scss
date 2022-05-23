@@ -1,0 +1,73 @@
+.contact-members {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 783px) {
+      padding-left: 2rem;
+  }
+}
+
+.contact-member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.contact-img {
+  width: 7rem;
+  border-radius: 50%;
+  margin-bottom: 0;
+
+  @media (min-width: 784px) and (max-width: 840px) {
+    width: 6.5rem;
+  }
+}
+
+.name-contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 2rem;
+
+  @media (min-width: 784px) and (max-width: 840px) {
+    margin-left: 1.5rem;
+  }
+}
+
+.contact-name {
+  color: black;
+  font-size: 24px;
+  padding-bottom: 0.5rem;
+
+  @media (min-width: 784px) and (max-width: 840px) {
+    font-size: 22px;
+  }
+}
+
+.contact-me {
+  display: flex;
+  align-items: center;
+  color: black;
+  border: solid black 0.075rem;
+  border-radius: 1rem;
+  padding: 0.1rem 0.5rem;
+  max-width: max-content;
+  box-sizing: content-box;
+
+  @media (min-width: 784px) and (max-width: 840px) {
+    font-size: 16px;
+  }
+}
+
+.contact-me:hover {
+  color: white;
+  background-color: $red;
+  border: solid $red 0.075rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.address-card {
+  margin-right: 0.5rem;
+}

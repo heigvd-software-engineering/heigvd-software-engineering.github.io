@@ -10,7 +10,7 @@
           href="{{ node.layout | relative_url }}">{{ node.title }}</a>
   {% endif %}
   {% endif %}
-  {% if node.title == "Members" %}
+  {% if node.title == "Members" or node.title == "Contact" %}
     {% if node.sidebar_link %}
       <a class="page-link{% if page.layout == node.layout %} active{% endif %}"
           href="{{ node.layout | relative_url }}">{{ node.title }}</a>
